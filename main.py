@@ -24,7 +24,7 @@ prompt = st.text_input(f"Masukkan prompt untuk {selected_agent}:", "")
 if st.button("Kirim"):
     if prompt:
         # URL API dengan parameter prompt
-        url = f"https://api.ryzendesu.vip/api/ai/blackbox?chat=kamu adalah{selected_agent}terbaik maka tolong bantu saya,{prompt}(tanpa format latex)&options=gpt-4o"
+        url = f"https://api.ryzendesu.vip/api/ai/blackbox?chat=kamu adalah {selected_agent} terbaik maka tolong bantu saya,{prompt}(tanpa format latex)&options=gpt-4o"
 
         try:
             # Mengirim permintaan GET untuk mendapatkan data dari API
