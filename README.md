@@ -46,62 +46,6 @@ AiAgentManual/
    cd AiAgentManual
    ```
 
-2. Install dependensi:
-   ```bash
-   npm install
-   ```
-
-3. Buat file `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Isi variabel:
-   ```
-   OPENAI_API_KEY=your_openai_key
-   ```
-
-5. Jalankan:
-   ```bash
-   node src/main.js
-   ```
-
----
-
-## 📌 Contoh Penggunaan
-
-```js
-import { SimpleAgent } from './src/agents/SimpleAgent';
-import { WebSearchTool } from './src/tools/search';
-
-const agent = new SimpleAgent({
-  tools: [new WebSearchTool()],
-  openaiKey: process.env.OPENAI_API_KEY
-});
-
-agent.run("Siapa presiden Indonesia saat ini?");
-```
-
----
-
-## 🧪 Testing
-
-Jalankan seluruh tes:
-```bash
-npm test
-```
-
----
-
-## 📈 Rencana Pengembangan
-
-- [ ] Tambah agent Reflexion dan ReAct
-- [ ] Integrasi tools seperti Google Sheets, Email API
-- [ ] Evaluasi agent secara otomatis
-- [ ] Dokumentasi interaktif berbasis Jupyter/Colab
-
----
-
 ## 🤝 Kontribusi
 
 1. Fork repo ini  
